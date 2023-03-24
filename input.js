@@ -22,6 +22,9 @@ const setupInput = (conn) => {
     } else if (key === "d") {
       connection.write("Move: right");
     }
+    if (key === "l") {
+      connection.write("Say: ICU")
+    }
   };
   stdin.on("data", handleUserInput);
   return stdin;
