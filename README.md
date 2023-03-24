@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](https://github.com/mattrostad/snake-client/blob/ef3aa39abc3ebcb21cde2552946730df88e30c68/Screenshot%202023-03-24%20at%203.13.29%20PM.png?raw=true)
-!["screenshot description"](#)
+![Game working will look like this!](https://github.com/mattrostad/snake-client/blob/ef3aa39abc3ebcb21cde2552946730df88e30c68/Screenshot%202023-03-24%20at%203.13.29%20PM.png?raw=true)
+![Sends message when hit key: l](https://github.com/mattrostad/snake-client/blob/main/Screenshot%202023-03-24%20at%203.13.29%20PM.png?raw=true)
 
 
 ## Getting Started
