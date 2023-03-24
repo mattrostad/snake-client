@@ -10,9 +10,11 @@ const setupInput = (conn) => {
   stdin.setEncoding("utf8");
   stdin.resume();
   const handleUserInput = function (key) {
+    //set up close game by pressing 'control C'
     if (key === "\u0003") {
       process.exit();
     }
+    //Bind move keys to W,A,S,D
     if (key === "w") {
       connection.write("Move: up");
     } else if (key === "a") {
