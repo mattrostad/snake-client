@@ -3,7 +3,7 @@ const net = require("net");
 // establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: "192.168.1.88",
+    host: "172.16.226.236",
     port: 50541, // PORT number here,
   });
 
@@ -26,24 +26,6 @@ const connect = function () {
   return conn;
 };
 
-// setup interface to handle user input from stdin
-
-const setupInput = function () {
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  const handleUserInput = function (key) {
-    if (key === "\u0003") {
-      process.exit();
-    }
-  };
-  stdin.on("data", handleUserInput);
-  return stdin;
-};
-
-
 module.exports = {
   connect,
-  setupInput
 };
