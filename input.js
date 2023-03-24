@@ -1,5 +1,5 @@
 // Stores the active TCP connection object.
-let connection; 
+let connection;
 
 // setup interface to handle user input from stdin
 
@@ -23,12 +23,11 @@ const setupInput = (conn) => {
       connection.write("Move: right");
     }
     if (key === "l") {
-      connection.write("Say: ICU")
+      connection.write("Say: ICU");
     }
   };
   stdin.on("data", handleUserInput);
   return stdin;
 };
 
-
-module.exports = {setupInput}
+module.exports = { setupInput };

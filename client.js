@@ -16,9 +16,9 @@ const connect = function () {
     console.log("Connection Established");
   });
 
-conn.on("connect", () => {
-  conn.write("Name: MCR")
-})
+  conn.on("connect", () => {
+    conn.write("Name: MCR");
+  });
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
