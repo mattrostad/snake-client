@@ -13,10 +13,11 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Connection Established");
-  });
-
-  conn.on("connect", () => {
     conn.write("Name: MCR");
+    conn.write("Move: up");
+    conn.write("Move: down");
+    conn.write("Move: left");
+    conn.write("Move: right");
   });
 
   // interpret incoming data as text
